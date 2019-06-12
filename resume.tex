@@ -1,0 +1,160 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Derek} \headerlastnamestyle{Welty} \\
+	\vspace{2mm}
+	{\faEnvelope\ weltyderek@gmail.com} | {\faMobile\ 636-443-5464} | {\faMapMarker\ Kansas City, MO} | {\faLink\ www.derekwelty.com}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{MS in Electrical Engineering}
+	{Missouri University of Science \& Technology}
+	{Rolla, MO}
+	{August 2013 – May 2018}
+	{GPA: 4.0/4.0}
+	\cventry
+	{BS in Electrical Engineering, Minor in Mathematics}
+	{Missouri University of Science \& Technology}
+	{Rolla, MO}
+	{August 2008 – December 2012}
+	{GPA: 3.93/4.0}
+\end{cventries}
+
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Senior Design Engineer}
+	{Garmin International}
+	{Olathe, KS}
+	{March 2017 – Present}
+	{\begin{cvitems}
+		\item {Designed and developed complex PCBs with analog, digital, and RF circuitry}
+		\item {Worked and visited with factory team in Taiwan to design for manufacturability}
+		\item {Tested and debugged hardware with use of proficient troubleshooting skills}
+		\item {Project engineer leading individuals across multiple disciplines}
+		\item {Supported automotive mass production consumer electronics}
+		\end{cvitems}}
+	\cventry
+	{Electrical Engineer III}
+	{DOE National Security Campus, Managed by Honeywell}
+	{Kansas City, MO}
+	{January 2013 – March 2017}
+	{\begin{cvitems}
+		\item {Lead tester design engineer implementing hardware and software automated test solutions}
+		\item {Procured COTS instrumentation for use with custom designed PCBs}
+		\item {Interfaced with customers and supported earned value management project planning}
+		\item {US Government Security Clearance}
+		\end{cvitems}}
+	\cventry
+	{Network Engineer Intern}
+	{Sprint Nextel Corporation}
+	{Overland Park, KS}
+	{May 2012 – August 2012}
+	{\begin{cvitems}
+		\item {Developed VoIP Android IMS client using Java}
+		\item {Debugged client/server communications by analyzing raw packets}
+		\item {Utilized protocols such as UDP, SIP, and RTP}
+		\end{cvitems}}
+	\cventry
+	{Production Management Engineer Co-op}
+	{Cargill Corn Milling Inc.}
+	{Eddyville, IA}
+	{May 2011 – December 2011}
+	{\begin{cvitems}
+		\item {Served as a project manager for various installations}
+		\item {Focused on power and automation}
+		\item {Hired and managed a team of contractors}
+		\end{cvitems}}
+	\cventry
+	{UI/UX Developer}
+	{Lumate, LLC}
+	{St. Louis, MO (Remote)}
+	{October 2010 – March 2015}
+	{\begin{cvitems}
+		\item {Created in-house and customer specific graphics for mobile apps (Android, iOS)}
+		\item {Backend web development (Python, jQuery, HTML)}
+		\item {Interfaced directly with customers creating logos, flyers, posters, t-shirt designs and brochures.}
+		\end{cvitems}}
+\end{cventries}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Programming:  & {\skill{ VB.NET, Python, Java, MATLAB, Powershell, Github, Subversion, TestStand, Linux, ADB, Visual Studio}} \\
+		Hardware:  & {\skill{ Oscilloscopes, DMM, VNA, Raspberry Pi, Arduino}} \\
+		Engineering:  & {\skill{ PCB Design, Mentor Graphics, CADSTAR, OrCad, SPICE, EMC/EMI, Solidworks}} \\
+		Graphic Design:  & {\skill{ Photoshop, Illustrator}} \\
+		Miscellaneous:  & {\skill{ MS Office, MS Project, Excel, Android}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+
+\cvsection{Awards}
+\begin{cvhonors}
+	\cvhonor
+	{Honeywell Aerospace Outstanding Engineer Award}
+	{}
+	{Honeywell}
+	{2016}
+\end{cvhonors}
+\ 
+\end{document}
