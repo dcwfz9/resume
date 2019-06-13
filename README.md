@@ -6,8 +6,8 @@ You will need to have `xelatex` installed on your machine.
 
 ```
 {
-sudo apt-get install texlive-xetex
-sudo apt-get install texlive-fonts-recommended
+  sudo apt-get install texlive-xetex
+  sudo apt-get install texlive-fonts-recommended
 }
 ```
 
@@ -16,4 +16,4 @@ To generate a PDF from this LaTeX code, navigate to this folder in a terminal an
 
     xelatex resume.tex
 
-Alternatively, you can use a site like [TeXstudio] to build and edit your LaTeX instead.
+Alternatively, you can use a tool like TeXstudio to build and edit your LaTeX instead.
