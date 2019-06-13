@@ -5,10 +5,8 @@
 You will need to have `xelatex` installed on your machine.
 
 ```
-{
-  sudo apt-get install texlive-xetex
-  sudo apt-get install texlive-fonts-recommended
-}
+sudo apt-get install texlive-xetex
+sudo apt-get install texlive-fonts-recommended
 ```
 
 ## Usage
