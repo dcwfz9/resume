@@ -4,17 +4,25 @@
 
 > LaTeX source built with the [Awesome-CV](https://github.com/posquit0/Awesome-CV) template. Originally scaffolded at [resumake.io](https://resumake.io). PDF is automatically compiled and published on every push via GitHub Actions.
 
-## Requirements
-You will need to have `xelatex` installed on your machine.
+## Building locally
+
+### Tectonic (recommended — self-contained, no TeX Live install)
+[Tectonic](https://tectonic-typesetting.github.io/) is a single-binary XeTeX engine. It downloads only the packages it needs and uses the fonts bundled in `fonts/` (Roboto + Source Sans Pro), so no system TeX install is required.
 
 ```
-sudo apt-get install texlive-xetex
-sudo apt-get install texlive-fonts-recommended
+brew install tectonic   # macOS (see the Tectonic site for Linux/Windows)
+tectonic resume.tex     # writes resume.pdf in this folder
 ```
 
-## Usage
-To generate a PDF from this LaTeX code, navigate to this folder in a terminal and run:
+The first run fetches support files (cached afterward). A harmless `Overfull \hbox` warning on the Skills table is expected.
 
-    xelatex resume.tex
+### XeLaTeX (TeX Live)
+```
+sudo apt-get install texlive-xetex texlive-fonts-recommended
+xelatex resume.tex
+```
+Or edit and build with a GUI tool like TeXstudio.
 
-Alternatively, you can use a tool like TeXstudio to build and edit your LaTeX instead.
+## Notes
+- `resume.pdf` is git-ignored — GitHub Actions compiles it and publishes to the `build` branch on every push.
+- To check the page count programmatically: Tectonic writes **compressed** PDF object streams, so a raw `grep '/Type /Page'` finds nothing. Decompress the streams first (a short Python `zlib` script over each `stream`…`endstream` block works).
